@@ -1,0 +1,113 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+header {
+    background-color: #2f5d50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0 0 5px;
+}
+
+header p {
+    margin: 0;
+}
+
+nav {
+    background-color: white;
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+nav button {
+    background-color: white;
+    border: 1px solid #2f5d50;
+    color: #2f5d50;
+    padding: 8px 15px;
+    margin: 3px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+nav button:hover {
+    background-color: #2f5d50;
+    color: white;
+}
+
+main {
+    width: 90%;
+    max-width: 1000px;
+    margin: 25px auto;
+}
+
+.section {
+    background-color: white;
+    padding: 25px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.section h2 {
+    margin-top: 0;
+    color: #2f5d50;
+}
+
+button {
+    padding: 9px 15px;
+    border: none;
+    border-radius: 4px;
+    background-color: #2f5d50;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #24483e;
+}
+
+input,
+select {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    padding: 9px;
+    margin: 6px 0 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.hidden {
+    display: none;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f0f0f0;
+}
+
+#signupMessage,
+#attendanceMessage {
+    margin-top: 15px;
+    font-weight: bold;
+}
