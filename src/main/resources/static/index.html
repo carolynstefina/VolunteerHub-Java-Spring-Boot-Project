@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>VolunteerHub</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>VolunteerHub</h1>
+    <p>NGO Volunteer Sign-up and Event Tracker</p>
+</header>
+
+<nav>
+    <button type="button" id="homeButton">Home</button>
+    <button type="button" id="volunteersButton">Volunteers</button>
+    <button type="button" id="eventsButton">Events</button>
+    <button type="button" id="signupsButton">Signups</button>
+    <button type="button" id="attendanceButton">Attendance</button>
+</nav>
+
+<main>
+
+    <!-- HOME -->
+    <section id="home" class="section">
+
+        <h2>Welcome to VolunteerHub</h2>
+
+        <p>
+            Manage volunteers, events, registrations and attendance
+            from one place.
+        </p>
+
+        <p>
+            Use the navigation above to manage the system.
+        </p>
+
+    </section>
+
+
+    <!-- VOLUNTEERS -->
+    <section id="volunteers" class="section hidden">
+
+        <h2>Volunteers</h2>
+
+        <h3>Add Volunteer</h3>
+
+        <label>Name</label>
+        <input type="text" id="volunteerName">
+
+        <label>Email</label>
+        <input type="email" id="volunteerEmail">
+
+        <label>Phone</label>
+        <input type="text" id="volunteerPhone">
+
+        <button type="button" id="addVolunteerButton">
+            Add Volunteer
+        </button>
+
+        <p id="volunteerMessage"></p>
+
+        <hr>
+
+        <h3>Volunteer List</h3>
+
+        <button type="button" id="viewVolunteersButton">
+            View Volunteers
+        </button>
+
+        <div id="volunteerList"></div>
+
+        <hr>
+
+        <h3>View Volunteer Hours</h3>
+
+        <label>Volunteer ID</label>
+        <input type="number" id="hoursVolunteerId" min="1">
+
+        <button type="button" id="viewHoursButton">
+            View Total Hours
+        </button>
+
+        <p id="hoursMessage"></p>
+
+    </section>
+
+
+    <!-- EVENTS -->
+    <section id="events" class="section hidden">
+
+        <h2>Events</h2>
+
+        <h3>Add Event</h3>
+
+        <label>Event Name</label>
+        <input type="text" id="eventName">
+
+        <label>Date</label>
+        <input type="date" id="eventDate">
+
+        <label>Location</label>
+        <input type="text" id="eventLocation">
+
+        <label>Capacity</label>
+        <input type="number" id="eventCapacity" min="1">
+
+        <button type="button" id="addEventButton">
+            Add Event
+        </button>
+
+        <p id="eventMessage"></p>
+
+        <hr>
+
+        <h3>Event List</h3>
+
+        <button type="button" id="viewEventsButton">
+            View Events
+        </button>
+
+        <div id="eventList"></div>
+
+        <hr>
+
+        <h3>Upcoming Events</h3>
+
+        <button type="button" id="viewUpcomingEventsButton">
+            View Upcoming Events
+        </button>
+
+        <div id="upcomingEventList"></div>
+
+    </section>
+
+
+    <!-- SIGNUPS -->
+    <section id="signups" class="section hidden">
+
+        <h2>Event Signup</h2>
+
+        <label>Volunteer ID</label>
+        <input type="number" id="signupVolunteerId" min="1">
+
+        <label>Event ID</label>
+        <input type="number" id="signupEventId" min="1">
+
+        <button type="button" id="registerButton">
+            Register
+        </button>
+
+        <p id="signupMessage"></p>
+
+    </section>
+
+
+    <!-- ATTENDANCE -->
+    <section id="attendance" class="section hidden">
+
+        <h2>Attendance</h2>
+
+        <label>Signup ID</label>
+        <input type="number" id="attendanceSignupId" min="1">
+
+        <label>Attended</label>
+
+        <select id="attendanceStatus">
+            <option value="true">Yes</option>
+            <option value="false">No</option>
+        </select>
+
+        <label>Hours</label>
+        <input type="number" id="attendanceHours" min="0">
+
+        <button type="button" id="saveAttendanceButton">
+            Save Attendance
+        </button>
+
+        <p id="attendanceMessage"></p>
+
+    </section>
+
+</main>
+
+<script src="script.js"></script>
+
+</body>
+</html>
